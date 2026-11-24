@@ -65,6 +65,8 @@ section{margin-bottom:38px;scroll-margin-top:10px}
 .collaboration-note{font-size:14px;margin-top:4px}
 .event-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 24px;margin:22px 0}
 .event-gallery figure{margin:0;min-width:0}
+.event-gallery .event-feature{grid-column:1/-1;scroll-margin-top:10px}
+.event-gallery .event-feature img{object-position:center 60%}
 .event-photo{display:block;cursor:zoom-in;overflow:hidden;border-radius:4px}
 .event-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 .event-photo.portrait-photo img{aspect-ratio:4/3;object-position:center 24%}
