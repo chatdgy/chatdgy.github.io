@@ -11,7 +11,10 @@ if (typeof viewer.showModal === 'function') {
       fullFigure.src = link.href;
       fullFigure.alt = link.dataset.caption;
       caption.textContent = link.dataset.caption;
-      source.href = link.dataset.source;
+      document.getElementById('figure-label').textContent = link.dataset.kind === 'photo' ? 'Conference moments' : 'Research framework';
+      source.hidden = !link.dataset.source;
+      if (link.dataset.source) source.href = link.dataset.source;
+      else source.removeAttribute('href');
       viewer.showModal();
     });
   }
