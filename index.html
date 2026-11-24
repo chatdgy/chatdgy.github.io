@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="董光远，NUS–Tsinghua NExT++ 研究生。研究多模态学习、智能体记忆与高效推理。">
+  <title>Guangyuan Dong · 董光远</title>
+  <link rel="icon" href="assets/guangyuan-dong.webp" type="image/webp">
+  <link rel="preload" href="assets/fonts/stix-two-text.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="mast">
+  <div class="wrap topbar">
+    <a class="signature" href="#about" aria-label="Guangyuan Dong 首页">G. Dong</a>
+    <nav aria-label="主导航"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="mailto:guangyuand@acm.org">Contact <span aria-hidden="true">↗</span></a></nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+  <section class="intro" id="about" aria-labelledby="name">
+    <div class="intro-text">
+      <div class="affiliation">NUS–Tsinghua NExT++ <span> / </span> Singapore</div>
+      <h1 id="name" lang="en">Guangyuan Dong <span lang="zh-Hans">董光远</span></h1>
+      <p>我在新加坡国立大学–清华大学下一代搜索技术联合中心读研，有幸得到沈飞老师和蔡达成教授（Tat-Seng Chua，新加坡科学院院士）的指导。</p>
+      <p>我最早做图文检索时，常遇到这样的例子：两张图都符合描述，决定哪张排在前面的，是一句话里很容易忽略的细节。现在我仍然关心这些细节的去向。视觉语言模型会用到哪些证据？智能体会把哪些经验留给下一次决策？任务变长以后，这些信息又能保留多久？</p>
+      <div class="profile-links"><a href="https://scholar.google.com/citations?user=IQ_mT-IAAAAJ">Google Scholar ↗</a><a href="https://orcid.org/0009-0004-1160-3349">ORCID ↗</a><a href="mailto:guangyuand@acm.org">guangyuand@acm.org</a></div>
+    </div>
+    <div class="portrait"><img src="assets/guangyuan-dong.webp" width="820" height="820" alt="董光远的个人照片" fetchpriority="high"></div>
+  </section>
+  <aside class="record" aria-label="学术概况">
+    <span><strong>130+</strong> Google Scholar 引用</span><span><strong>7</strong> h-index</span><span><strong>14</strong> 篇已发表论文</span><span><strong>8</strong> 篇一作或通讯</span>
+  </aside>
+
+  <article class="feature" id="ledger" aria-labelledby="ledger-title">
+    <div class="feature-copy">
+      <p class="kicker">Latest paper <span> / </span> Nov 2026 <span> / </span> 第一作者</p>
+      <h2 id="ledger-title" lang="en">Close the Loop on the Retrievability Gap</h2>
+      <p>两张卫星图，画质分数相同，只有一张还能搜到海边的停车场。我们把检索放进图像复原的训练环节，让小目标也能影响生成结果。</p>
+      <div class="actions"><a href="https://arxiv.org/abs/2611.28146">论文 ↗</a><a href="assets/figures/ledger.webp" class="zoom" data-caption="LEDGER · 图 3　同一冻结编码器从输入提取概念，再从复原图读回。" data-source="https://arxiv.org/html/2611.28146v1#S4.F3">查看框架图</a></div>
+    </div>
+    <figure class="feature-figure">
+      <a class="zoom" href="assets/figures/ledger-scene.webp" data-caption="LEDGER · 图 1　检索模型从输入读出六个概念，分别在两种复原结果中找回三个和六个。" data-source="https://arxiv.org/html/2611.28146v1#S0.F1"><img src="assets/figures/ledger-scene.webp" width="1755" height="352" alt="参考图、SGDiff 和 LEDGER 对比。海滨公路、停车场和树带在两种复原结果中的检索分数明显不同。"></a>
+      <figcaption><span>Fig. 1</span> 海滨小镇的六个检索词 <a href="https://arxiv.org/html/2611.28146v1#S0.F1" aria-label="查看 LEDGER 原文图 1">↗</a></figcaption>
+    </figure>
+  </article>
+
+  <section class="section" id="research" aria-labelledby="research-title">
+    <div class="section-head"><h2 id="research-title" lang="en">Research interests</h2><span>研究脉络</span></div>
+    <div class="directions">
+      <article><h3><a href="#vision">多模态表征与检索 <span>↘</span></a></h3><p>从图文匹配到图像复原，我关心一幅图里有哪些细节能被文字找回，也想弄清楚模型在回答时何时会忽略眼前的证据。</p></article>
+      <article><h3><a href="#agent">智能体记忆与决策 <span>↘</span></a></h3><p>一次工具调用成功，可能只是碰巧。模型将来再遇到类似任务时，需要知道当时为何成功、哪些条件已经改变。</p></article>
+      <article><h3><a href="#reasoning">高效推理与测试时计算 <span>↘</span></a></h3><p>任务越长，保存整段历史和反复推理就越昂贵。我研究哪些历史值得占用缓存，以及多跑一轮计算究竟能推进几步。</p></article>
+    </div>
+    <p class="outlook">长期来看，我希望把这三条线连起来，让多模态智能体既能从交互中积累经验，也能在环境变化时重新判断。欢迎做视觉语言模型、Agent RL 和高效推理的朋友来交流。</p>
+  </section>
+  <section class="section" id="publications" aria-labelledby="papers-title">
+    <div class="section-head"><h2 id="papers-title" lang="en">Selected publications</h2><a href="https://scholar.google.com/citations?user=IQ_mT-IAAAAJ">完整列表 ↗</a></div>
+<div class="pub-group" id="vision">
+  <h3 class="group-title">多模态感知与视觉证据</h3>
+  <article class="paper">
+    <a class="figure-link zoom" href="assets/figures/dual-pathway.webp" data-caption="Dual-Pathway · 图 1　给视觉输入加噪声，再逐个恢复模型组件的激活，观察正确答案能否找回来。" data-source="https://arxiv.org/html/2605.13156v2#S3.F1">
+      <img loading="lazy" src="assets/figures/dual-pathway.webp" alt="Dual-Pathway 的激活干预流程，对比原始、加噪与局部恢复三次前向传播">
+    </a>
+    <div>
+      <p class="paper-meta">NeurIPS 2026 · 尾部通讯作者 · 项目负责人</p>
+      <h4><a href="https://arxiv.org/abs/2605.13156">Dual-Pathway Circuits of Object Hallucination in Vision-Language Models</a></h4>
+      <p>当模型坚持说图里有一个并不存在的物体，哪些内部组件影响了判断？我们在五种视觉语言模型中逐层干预，发现同一组视觉定位组件在答对和产生幻觉时，甚至会支持相反的答案。定向抑制幻觉通路后，POPE 对抗测试上的对象幻觉最多减少了 76%。</p>
+      <div class="actions"><a href="https://arxiv.org/abs/2605.13156">论文 ↗</a><a href="https://github.com/jiaxin26/DualPath-VLM">代码 ↗</a></div>
+    </div>
+  </article>
+  <ul class="related">
+    <li><a href="https://dl.acm.org/doi/10.1145/3799682.3841149">Bridging Low-Level Image Fusion and High-Level Semantic Understanding</a><span>用冻结的视觉语言模型读回融合图像中的概念，检查小目标是否还能被定位。ACM CIKM 2026 Oral · 第一作者</span></li>
+    <li><a href="https://aclanthology.org/2026.findings-emnlp.2220/">PriMD</a><span>当语音、画面或文本缺失时，从完整样本中蒸馏可复用的情感线索。EMNLP 2026 · 第一作者</span></li>
+    <li><a href="https://doi.org/10.1109/TMM.2026.3723619">Lever Can Move the Earth</a><span>图像里的细节常被文字省略。利用跨模态近邻补充这部分信息，改进图文检索排序。IEEE TMM 2026 · 学生第二作者</span></li>
+    <li><a href="https://neurips.cc/virtual/2026/poster/149664">MollFlow</a><span>从 H&amp;E 病理切片推断空间基因表达，用组织形态为流匹配提供先验。NeurIPS 2026 · 学生第二作者</span></li>
+  </ul>
+</div>
+
+<div class="pub-group" id="agent">
+  <h3 class="group-title">智能体记忆与策略学习</h3>
+  <article class="paper">
+    <a class="figure-link zoom" href="assets/figures/memguard.webp" data-caption="MemGuard · 图 2　验证结果随记忆一同保存，供后续写入、检索和冲突处理使用。" data-source="https://aclanthology.org/2026.emnlp-main.423.pdf#page=3">
+      <img loading="lazy" src="assets/figures/memguard.webp" alt="MemGuard 中验证器、候选记忆、检索和更新之间的信息流">
+    </a>
+    <div>
+      <p class="paper-meta">EMNLP 2026 · 第一作者、通讯作者</p>
+      <h4><a href="https://aclanthology.org/2026.emnlp-main.423/">MemGuard: Persisting Verifier Signals for LLM-Agent Memory Governance</a></h4>
+      <p>一次操作碰巧成功，Agent 很可能把错误的做法也记下来。MemGuard 把验证结论和置信度随经验保存。下次遇到类似任务，Agent 可以回查依据、处理冲突，也能从过去的失败中找出该避开的做法。在四个基座模型与四个基准的全部组合上，成功率指标均居首位，平均动作步数也最少。</p>
+      <div class="actions"><a href="https://aclanthology.org/2026.emnlp-main.423/">论文 ↗</a><a href="https://github.com/whyyyyy123/MemGuard">代码 ↗</a></div>
+    </div>
+  </article>
+  <article class="paper">
+    <a class="figure-link zoom" href="assets/figures/drill.webp" data-caption="DRILL · 图 1　策略先在世界模型中学习，再用更新后的策略表现为世界模型提供反馈。" data-source="https://arxiv.org/html/2610.30814v1#S3.F1">
+      <img loading="lazy" src="assets/figures/drill.webp" alt="DRILL 双层训练框架，内层更新策略，外层更新世界模型">
+    </a>
+    <div>
+      <p class="paper-meta">NeurIPS 2026 · 合作作者</p>
+      <h4><a href="https://arxiv.org/abs/2610.30814">DRILL: Training World Models to Improve Policies, Not Predict Pixels</a></h4>
+      <p>用世界模型训练机器人策略，怎样判断它生成的轨迹有没有用？DRILL 让策略先在想象轨迹上做一次 GRPO 更新，再用它在仿真环境中执行任务的回报训练世界模型。在五个操作环境中，π₀-3B 的平均任务成功率从 WMPO 的 59.4% 提高到 72.5%。</p>
+      <div class="actions"><a href="https://arxiv.org/abs/2610.30814">论文 ↗</a></div>
+    </div>
+  </article>
+  <ul class="related">
+    <li><a href="https://aclanthology.org/2026.findings-emnlp.395/">MemMark</a><span>把归属信息写入记忆更新的选择中，记忆经过多轮改写后仍可从最终快照追溯来源。EMNLP 2026 · 学生第二作者</span></li>
+  </ul>
+</div>
+
+<div class="pub-group" id="reasoning">
+  <h3 class="group-title">语言模型推理与高效适配</h3>
+  <article class="paper">
+    <a class="figure-link zoom" href="assets/figures/par.webp" data-caption="PAR · 图 2　用第 k 步的任务状态监督第 k 轮循环，并将隐状态尺度锚定在首轮。" data-source="https://arxiv.org/html/2610.27628v1#S3.F2">
+      <img loading="lazy" src="assets/figures/par.webp" alt="PAR 循环架构、进度监督、前缀自蒸馏与停机机制">
+    </a>
+    <div>
+      <p class="paper-meta">arXiv 2026 · 第一作者</p>
+      <h4><a href="https://arxiv.org/abs/2610.27628">PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking</a></h4>
+      <p>把同一组网络层多跑几轮，模型会沿着任务多走几步吗？我们让第 k 轮预测做完前 k 步的状态，并把每轮的隐状态尺度校准到首轮。在物品交换任务上，0.5B 模型训练时最多见过 32 步，测试拉长到 512 步，仍有 95.5% 的样本能答对所有物品的位置。</p>
+      <div class="actions"><a href="https://arxiv.org/abs/2610.27628">论文 ↗</a></div>
+    </div>
+  </article>
+  <ul class="related">
+    <li><a href="https://neurips.cc/virtual/2026/poster/155521">TaskKV</a><span>按历史交互对下一步动作的影响裁剪 KV 缓存。在 AgentBench 和 ALFWorld 上，用 20% 的缓存保留了全缓存成功率的 87–89%。NeurIPS 2026 · 独立通讯作者、项目负责人</span></li>
+    <li><a href="https://neurips.cc/virtual/2026/poster/150960">MetaForget</a><span>用独立提示审计删除请求是否生效，并根据审计结果学习更新哪些层、采用多大步长。NeurIPS 2026 · 尾部通讯作者、项目负责人</span></li>
+    <li><a href="https://arxiv.org/abs/2610.06765">ARBOR</a><span>根据医学问题所属专科和推理类型，选择低秩适配器中的共享分量。IEEE BIBM 2026 Oral · 第一作者</span></li>
+  </ul>
+</div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <div class="section-head"><h2 id="experience-title" lang="en">Research experience</h2><span>研究经历</span></div>
+    <dl class="timeline">
+      <div><dt>Present</dt><dd><h3>NUS–Tsinghua NExT++ Research Centre</h3><p>硕士阶段在组内研究多模态检索与基础模型。LEDGER 源于此前做图像融合时留下的一个问题：生成器保住了多少下游任务真正需要的信息？</p></dd></div>
+      <div><dt>Jul – Oct 2026</dt><dd><h3>Ant Research · AI Lab</h3><p>在蚂蚁集团技术研究院人工智能实验室研究循环语言模型与长程推理。参与主导 PAR 的方法设计与训练实现，并研究面向智能体的 KV 缓存压缩。</p></dd></div>
+      <div><dt>Jul – Oct 2025</dt><dd><h3>Microsoft Research Asia · MSRA–NUS Summer School</h3><p>在微软亚洲研究院暑校与来自不同学校的同学合作。随后继续研究视觉证据与对象幻觉，并把问题拓展到世界模型和策略学习。</p></dd></div>
+      <div><dt>Jan 2023 – Jul 2025</dt><dd><h3>Shandong University · Information Retrieval Lab</h3><div class="lab">Shandong Provincial Key Laboratory of Digital Media Technology</div><p>本科期间在山东大学信息检索实验室开展科研，参与山东省数字媒体技术重点实验室联合培养。在陈竹敏教授指导下研究图文检索、跨模态语义对齐与细粒度情感分析。</p></dd></div>
+    </dl>
+  </section>
+  <section class="section extras" aria-label="学术服务与个人兴趣">
+    <div><h2 lang="en">Service &amp; honors</h2><p><em>NeurIPS 2026 Scholar Financial Award</em></p><p>担任 NeurIPS、ICLR、WWW、ACL ARR、CVPR、WACV、IEEE ICASSP 等会议及 IEEE TDSC 的审稿人或程序委员会成员。</p></div>
+    <div><h2 lang="en">Beyond research</h2><p>小时候学围棋，拿到过业余五段。现在仍喜欢下棋，也吹萨克斯、游泳、徒步，偶尔跑半马。</p></div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>Guangyuan Dong · 董光远</span><a href="#about">回到顶部 ↑</a></div></footer>
+<dialog id="figure-view" aria-labelledby="figure-label">
+  <div class="viewer-top"><span id="figure-label">论文原图</span><button type="button" id="close-view" autofocus>关闭 ×</button></div>
+  <img id="full-figure" alt=""><div class="viewer-bottom"><p id="figure-caption"></p><a id="figure-source">原文 ↗</a></div>
+</dialog>
+</body>
+</html>
