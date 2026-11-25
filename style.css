@@ -78,7 +78,7 @@ section{margin-bottom:38px;scroll-margin-top:10px}
 .event-reflection h3{font-size:18px}
 .event-reflection .event-meta{font-size:13px;color:#666;margin:4px 0 0}
 .event-reflection>p:not(.event-meta){font-size:14px}
-.lecun-gallery{margin:16px 0 18px}
+.lecun-gallery{width:50%;gap:16px;margin:16px 0 18px}
 .lecun-gallery .event-photo img{aspect-ratio:3/2;object-position:center 42%}
 .lecun-gallery .talk-slide img{object-fit:contain}
 .community-note{font-size:14px}
@@ -122,6 +122,7 @@ h2{font-size:22px}.paper{grid-template-columns:1fr;gap:14px;padding:14px 0;margi
 .experience-title>span{display:block;margin-top:3px}.experience p{font-size:13px}
 .news li{grid-template-columns:70px 1fr;gap:8px}.news time{font-size:12px}
 .event-gallery{grid-template-columns:1fr;gap:24px}
+.lecun-gallery{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 }
 @media(prefers-reduced-motion:reduce){.portrait img{transition:none}.portrait:hover img{transform:none}}
 @media print{.masthead,.sidebar,dialog,.paper-nav,.skip,footer{display:none}.layout{display:block;width:100%;margin:0}.paper{break-inside:avoid}}
