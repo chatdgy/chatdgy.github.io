@@ -74,6 +74,13 @@ section{margin-bottom:38px;scroll-margin-top:10px}
 .event-gallery figcaption{font-size:13px;line-height:1.55;margin-top:9px}
 .event-gallery figcaption strong{display:block;font-size:14px}
 .event-gallery figcaption span{display:block;color:#666}
+.event-reflection{margin-top:24px;padding-bottom:10px;scroll-margin-top:10px}
+.event-reflection h3{font-size:18px}
+.event-reflection .event-meta{font-size:13px;color:#666;margin:4px 0 0}
+.event-reflection>p:not(.event-meta){font-size:14px}
+.lecun-gallery{margin:16px 0 18px}
+.lecun-gallery .event-photo img{aspect-ratio:3/2;object-position:center 42%}
+.lecun-gallery .talk-slide img{object-fit:contain}
 .community-note{font-size:14px}
 .simple-list{padding-left:21px;margin:0 0 13px}
 .simple-list li{margin:4px 0}

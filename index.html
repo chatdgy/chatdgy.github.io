@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://chatdgy.github.io/assets/plush-avatar.jpg">
 <title>Guangyuan Dong · Homepage</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261124-avatar">
+<link rel="stylesheet" href="style.css?v=20261125-lecun">
 <script src="site.js" defer></script>
 </head>
 <body>
@@ -54,6 +54,7 @@
 <h2><span aria-hidden="true">🔥</span> News</h2>
 <ul class="news">
   <li><time datetime="2026-11">Nov 2026</time><span>🆕 Our latest work, <a href="#paper-ledger"><strong>LEDGER</strong></a>, is now on arXiv! We connect multimodal generation and retrieval through semantic feedback, so generated images preserve the details needed for downstream understanding.</span></li>
+  <li><time datetime="2026-11">Nov 2026</time><span>💭 Attended <strong>Yann LeCun’s talk on JEPA and world models in Singapore</strong>. A discussion about abstraction and unknown downstream tasks left me with much to think about. <a href="#lecun-jepa">Photos &amp; reflections ↗</a></span></li>
   <li><time datetime="2026-11">Nov 2026</time><span>🎤 Back from <strong>ACM CIKM 2026 in Rome</strong>, where I gave an oral presentation of <a href="#paper-lance"><strong>LANCE</strong></a>, our work on image fusion and semantic understanding. <a href="#lance-oral">Talk photo ↗</a></span></li>
   <li><time datetime="2026-10">Oct 2026</time><span>🚀 <a href="#paper-par"><strong>PAR</strong></a>, my work at Ant Research’s AI Lab, is now on arXiv. A 0.5B recurrent language model trained on 32-step sequences reaches 95.5% full-state accuracy at 512 steps.</span></li>
   <li><time datetime="2026-10">Oct 2026</time><span>☕ Attended <strong>EMNLP 2026 in Budapest</strong>, where we shared our work on agent memory and multimodal learning. Great to meet so many researchers working on these questions! <a href="#activities">Photos ↗</a></span></li>
@@ -215,7 +216,17 @@
 </section>
 <section id="activities">
 <h2><span aria-hidden="true">📷</span> Talks &amp; Community</h2>
-<p>Sharing research and catching up with colleagues at CIKM in Rome and EMNLP in Budapest.</p>
+<p>Conversations, presentations, and moments with the research community.</p>
+<article class="event-reflection" id="lecun-jepa" aria-labelledby="lecun-title">
+  <h3 id="lecun-title">Yann LeCun on JEPA and World Models</h3>
+  <p class="event-meta"><time datetime="2026-11">November 2026</time> · Singapore</p>
+  <div class="event-gallery lecun-gallery">
+    <figure><a class="event-photo zoom" href="assets/events/lecun-singapore-2026.jpg" data-kind="photo" data-caption="With Yann LeCun at his talk on JEPA and world models · Singapore, November 2026." aria-label="Enlarge the photo with Yann LeCun"><img src="assets/events/lecun-singapore-2026.jpg" width="2460" height="1924" alt="Guangyuan Dong with Yann LeCun at the Singapore event" loading="lazy"></a><figcaption><strong>With Yann LeCun</strong><span>Singapore · November 2026</span></figcaption></figure>
+    <figure><a class="event-photo talk-slide zoom" href="assets/events/lecun-jepa-talk-2026.jpg" data-kind="photo" data-caption="A slide from Yann LeCun’s talk on JEPA and world models · Singapore, November 2026." aria-label="Enlarge the slide from Yann LeCun’s talk"><img src="assets/events/lecun-jepa-talk-2026.jpg" width="1440" height="810" alt="Yann LeCun’s presentation slide advocating joint-embedding architectures and model-predictive control" loading="lazy"></a><figcaption><strong>JEPA and Predictive World Models</strong><span>A slide from the talk</span></figcaption></figure>
+  </div>
+  <p>At the talk, Prof. Bo An raised a question that stayed with me: how should task-agnostic representations discard details when downstream tasks are unknown? Color may be incidental to selecting a car, but essential when the request specifies a red one.</p>
+  <p>My understanding of LeCun’s response was to learn a world model through large-scale self-supervision, then adapt it using limited action-conditioned data and task-specific costs. For me, the open question is how predictive abstractions can retain the information that unfamiliar tasks will need. This connects closely to my own work on preserving semantics across multimodal generation and retrieval.</p>
+</article>
 <div class="event-gallery">
   <figure class="event-feature" id="lance-oral"><a class="event-photo zoom" href="assets/events/cikm-2026-lance-oral.png" data-kind="photo" data-caption="Presenting LANCE at ACM CIKM 2026 in Rome, Italy." aria-label="Enlarge the LANCE oral presentation photo"><img src="assets/events/cikm-2026-lance-oral.png" width="1440" height="1080" alt="Guangyuan Dong giving the LANCE oral presentation at ACM CIKM 2026" loading="lazy"></a><figcaption><strong>LANCE · Oral Presentation</strong><span>ACM CIKM 2026 · Rome, Italy · November 2026</span></figcaption></figure>
   <figure><a class="event-photo zoom" href="assets/events/cikm-2026-rome.png" data-kind="photo" data-caption="With colleagues at ACM CIKM 2026 in Rome." aria-label="Enlarge the CIKM 2026 photo"><img src="assets/events/cikm-2026-rome.png" width="1280" height="720" alt="Group photo at CIKM 2026 in Rome" loading="lazy"></a><figcaption><strong>CIKM 2026 · Rome</strong><span>With colleagues · November 2026</span></figcaption></figure>
