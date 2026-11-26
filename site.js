@@ -2,6 +2,20 @@ const viewer = document.getElementById('figure-view');
 const fullFigure = document.getElementById('full-figure');
 const caption = document.getElementById('figure-caption');
 const source = document.getElementById('figure-source');
+const chinese = document.documentElement.lang === 'zh-CN';
+const viewerLabels = chinese
+  ? {photo: '学术活动', contact: '微信联系', framework: '研究框架'}
+  : {photo: 'Conference moments', contact: 'WeChat', framework: 'Research framework'};
+
+for (const link of document.querySelectorAll('.language-switch')) {
+  const target = new URL(link.getAttribute('href'), location.href);
+  const updateLanguageLink = () => {
+    target.hash = location.hash;
+    link.href = target.href;
+  };
+  updateLanguageLink();
+  window.addEventListener('hashchange', updateLanguageLink);
+}
 
 if (typeof viewer.showModal === 'function') {
   for (const link of document.querySelectorAll('a.zoom')) {
@@ -11,7 +25,8 @@ if (typeof viewer.showModal === 'function') {
       fullFigure.src = link.href;
       fullFigure.alt = link.dataset.caption;
       caption.textContent = link.dataset.caption;
-      document.getElementById('figure-label').textContent = link.dataset.kind === 'photo' ? 'Conference moments' : 'Research framework';
+      viewer.dataset.kind = link.dataset.kind || 'framework';
+      document.getElementById('figure-label').textContent = viewerLabels[viewer.dataset.kind] || viewerLabels.framework;
       source.hidden = !link.dataset.source;
       if (link.dataset.source) source.href = link.dataset.source;
       else source.removeAttribute('href');

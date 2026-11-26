@@ -12,15 +12,21 @@
 <meta property="og:image" content="https://chatdgy.github.io/assets/plush-avatar.jpg">
 <title>Guangyuan Dong · Homepage</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261126-name-nowrap">
-<script src="site.js" defer></script>
+<link rel="stylesheet" href="style.css?v=20261126-bilingual">
+<script src="site.js?v=20261126-bilingual" defer></script>
+<link rel="alternate" hreflang="en" href="https://chatdgy.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://chatdgy.github.io/zh.html">
+<link rel="alternate" hreflang="x-default" href="https://chatdgy.github.io/">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
+  <div class="nav-shell">
   <nav class="nav" aria-label="Main navigation">
     <a class="home" href="#about">Homepage</a><a href="#about">About Me</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#activities">Activities</a><a href="#service">Service</a><a href="#misc">Beyond Research</a>
   </nav>
+  <a class="language-switch" href="zh.html" lang="zh-CN" hreflang="zh-CN" aria-label="切换到中文">中文</a>
+</div>
 </header>
 <div class="layout">
 <aside class="sidebar" aria-label="Profile">
@@ -32,6 +38,7 @@
     <li><span aria-hidden="true">📍</span> Singapore</li>
     <li><span aria-hidden="true">✉️</span> <a href="mailto:guangyuand@acm.org">Email</a></li>
     <li><span aria-hidden="true">🎓</span> <a href="https://scholar.google.com/citations?user=IQ_mT-IAAAAJ">Google Scholar</a></li>
+    <li><span aria-hidden="true">💬</span> <a class="zoom wechat-link" href="assets/wechat-qr.png" data-kind="contact" data-caption="WeChat ID: ICLRNIPSICML" aria-label="View WeChat contact details">WeChat</a></li>
     <li><span class="orcid-icon" aria-hidden="true">iD</span> <a href="https://orcid.org/0009-0004-1160-3349">ORCID</a></li>
   </ul>
   <p class="scholar-stats"><strong>130+</strong> citations · h-index <strong>7</strong></p>
@@ -40,7 +47,7 @@
 <section id="about">
 <h2><span aria-hidden="true">👋</span> About Me</h2>
 <p>Welcome! I am a graduate student at the <strong>National University of Singapore</strong>, conducting research at the <a href="https://www.nextcenter.org/"><strong>NUS–Tsinghua NExT++ Research Centre</strong></a>. My research at NExT++ is guided by <a href="https://muzishen.github.io/">Dr. Fei Shen</a> and <a href="https://www.comp.nus.edu.sg/cs/people/chuats/">Prof. Tat-Seng Chua</a> (Academician of the Singapore National Academy of Science). Previously, I worked with <a href="https://gail.sdu.edu.cn/~zhuminchen/~zhuminchen_en.htm">Prof. Zhumin Chen</a> at Shandong University's Information Retrieval Lab and the Shandong Provincial Key Laboratory of Digital Media Technology. I have held research internships at Ant Research's AI Lab and Microsoft Research Asia, and collaborated with researchers at Peking University and <a href="https://www.professoren.tum.de/en/schuller-bjoern">Prof. Björn Schuller</a> (IEEE Fellow) at the Technical University of Munich (TUM).</p>
-<p>My research centers on <strong>multimodal large language models (MLLMs), multimodal intelligence, and agentic RL</strong>. I started with image–text retrieval, studying how models retain the fine-grained semantics needed to match images and language. This led me to broader questions about how agents acquire reliable evidence, carry useful experience forward, and reason efficiently over longer tasks. I have authored <strong>14 accepted papers</strong> in venues including NeurIPS, EMNLP, ACM MM, ACM CIKM, IEEE TMM, and IEEE BIBM, including <strong>8 as a first or corresponding author</strong>. I received the <strong>NeurIPS 2026 Scholar Financial Award</strong>.</p>
+<p>My research centers on <strong>multimodal large language models (MLLMs), multimodal intelligence, and agentic RL</strong>. I started with image–text retrieval, studying how models retain the fine-grained semantics needed to match images and language. This led me to broader questions about how agents acquire reliable evidence, carry useful experience forward, and reason efficiently over longer tasks. I have authored <strong>14 accepted papers</strong> in top-tier international conferences and journals, including NeurIPS, EMNLP, ACM MM, ACM CIKM, IEEE TMM, and IEEE BIBM, with <strong>8 as a first or corresponding author</strong>. I received the <strong>NeurIPS 2026 Scholar Financial Award</strong>.</p>
 <p>I believe that grounding AI in the visual world is essential to building capable, broadly useful agents. My past and current work follows three connected directions:</p>
 <ol class="research" id="research">
   <li><strong>Multimodal Learning &amp; Visual Understanding.</strong> I study whether visual representations and generated images preserve the information that downstream tasks need. In <a href="#paper-lance">LANCE</a> and <a href="#paper-ledger">LEDGER</a>, semantic feedback connects image generation with retrieval and recognition. I also investigate the circuits behind object hallucination in VLMs and representation learning when modalities are missing.</li>
