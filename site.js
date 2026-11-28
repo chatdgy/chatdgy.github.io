@@ -4,8 +4,8 @@ const caption = document.getElementById('figure-caption');
 const source = document.getElementById('figure-source');
 const chinese = document.documentElement.lang === 'zh-CN';
 const viewerLabels = chinese
-  ? {photo: '学术活动', contact: '微信联系', framework: '研究框架'}
-  : {photo: 'Conference moments', contact: 'WeChat', framework: 'Research framework'};
+  ? {photo: '学术活动', contact: '微信联系', framework: '研究框架', poster: '论文海报'}
+  : {photo: 'Conference moments', contact: 'WeChat', framework: 'Research framework', poster: 'Research poster'};
 
 for (const link of document.querySelectorAll('.language-switch')) {
   const target = new URL(link.getAttribute('href'), location.href);
